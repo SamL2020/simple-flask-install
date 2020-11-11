@@ -48,7 +48,10 @@ import shutil
 shutil.rmtree('build')
 shutil.rmtree('dist')
 shutil.rmtree('Flask.egg-info')
-shutil.copytree('install/src/flask', os.path.dirname(os.path.abspath(__file__))+'/flask')
+try:
+	shutil.copytree('install/src/flask', os.path.dirname(os.path.abspath(__file__))+'/flask')
+except:
+	""
 shutil.rmtree('install')
 print("Done!\n")
 success=False
