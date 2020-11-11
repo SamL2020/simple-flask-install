@@ -5,7 +5,7 @@ An easy way to install flask and setup. One file, no pip required.
 This is a python program that will install and setup an example file for you, no pip needed! 
 
 ### What is flask?
-> Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex  applications. It began as a simple wrapper around Werkzeug and Jinja and has become one of the most popular Python web application frameworks.
+> Flask is a lightweight [WSGI](https://wsgi.readthedocs.io/) web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex  applications. It began as a simple wrapper around [Werkzeug](https://www.palletsprojects.com/p/werkzeug/) and [Jinja](https://www.palletsprojects.com/p/jinja/) and has become one of the most popular Python web application frameworks.
 [Read more here](https://github.com/pallets/flask)
 
 ## Requirements
