@@ -51,23 +51,23 @@ shutil.rmtree('Flask.egg-info')
 shutil.copytree('install/src/flask', os.path.dirname(os.path.abspath(__file__))+'/flask')
 shutil.rmtree('install')
 print("Done!\n")
-sucess=False
+success=False
 if os.geteuid() == 0:
-	while sucess == False:
+	while success == False:
 		try:
 			port = int(input("Choose a port to host the website on: "))
 			if port <= 65535 and port > 0:
-				sucess=True
+				success=True
 			else:
 				print("Type a valid port number (1-65535)")
 		except ValueError:
 			print("Type a valid port number (1-65535)")
 else:
-	while sucess == False:
+	while success == False:
 		try:
 			port = int(input("Choose a port to host the website on (1025-65535): "))
 			if port <= 65535 and port > 1024:
-				sucess=True
+				success=True
 			elif port <= 1024 and port > 0:
 				print("You are requesting to use a priviliged port.")
 				print("Choose another port or run this program as root (sudo python3 main.py)")
